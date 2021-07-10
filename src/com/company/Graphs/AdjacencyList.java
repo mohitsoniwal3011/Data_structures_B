@@ -87,17 +87,5 @@ public class AdjacencyList {
         }
     }
 
-    public void deleteVertex(int info){
-        if(start == null){
-            System.out.println("Graph is empty can Not delete");
-            return;
-        }
-        if(start.info == info){
-            start=start.nextVertex;
-        }
-        else {
-        }
-    }
-    
     
 }
