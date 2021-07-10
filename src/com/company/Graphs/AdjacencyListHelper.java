@@ -32,11 +32,17 @@ public class AdjacencyListHelper {
                 case 3 ->{
                     System.out.println("Enter the vertex to be deleted:");
                     u= sc.nextInt();
+                    //the following method will delete all the edges incident on the vertex to be deleted
+                    adjacencyList.deleteIncomingEdges(u);
+                    //the following method will delete the vertex from the vertex list
+                    adjacencyList.deleteVertex(u);
+
                 }
                 case 4 ->{
                     System.out.println("Enter the edge to be deleted");
                     origin= sc.nextInt();
                     destination=sc.nextInt();
+                    adjacencyList.deleteEdge(origin,destination);
                 }
                 case 5 ->{
                     adjacencyList.display();
