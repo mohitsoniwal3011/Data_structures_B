@@ -325,15 +325,14 @@ class RedBlackTree{
     public void inorderTraversal(Node root){
         if(root != sentinel){
             inorderTraversal(root.left);
-            System.out.println(root.info+"    "+ root.color);
+            System.out.println(root.info+"    ");
             inorderTraversal(root.right);
         }
     }
 
     public void preorderTraversal(Node root){
         if(root != sentinel){
-            System.out.println(root.info+"    "+ root.color+"     "+ root.left.info+"       "+root.right.info);
-            //System.out.println(root.info+"    "+ root.color);
+            System.out.println(root.info+"    ");
             preorderTraversal(root.left);
             preorderTraversal(root.right);
         }
@@ -343,7 +342,7 @@ class RedBlackTree{
         if(root != sentinel){
             postorderTraversal(root.left);
             postorderTraversal(root.right);
-            System.out.println(root.info+"    "+ root.color);
+            System.out.println(root.info+"    ");
         }
     }
 }
