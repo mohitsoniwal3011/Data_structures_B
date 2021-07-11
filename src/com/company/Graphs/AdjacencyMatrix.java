@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class AdjacencyMatrix {
     static  int n;
     public static void main(String[] args) {
-        int [][] b=new int[5][4];
         Scanner sc =new Scanner(System.in);
         System.out.print("Enter number of vertices: ");
         n= sc.nextInt();
