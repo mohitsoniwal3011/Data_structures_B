@@ -55,6 +55,12 @@ public class DepthFirstSearch {
         System.out.println("Enter the starting vertex for Depth First Search:");
         v=new Scanner(System.in).nextInt();
         DFS(v);
+        for(v=0;v<n;v++){
+            if(state[v] == vertexState.initial){
+                DFS(v);
+            }
+        }
+        System.out.println("");
     }
     public void DFS(int v){
         Stack<Integer> st=new Stack<>();
@@ -72,4 +78,6 @@ public class DepthFirstSearch {
             }
         }
     }
+
 }
+
