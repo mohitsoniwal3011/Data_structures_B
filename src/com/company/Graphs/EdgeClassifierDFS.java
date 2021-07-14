@@ -1,5 +1,8 @@
 package com.company.Graphs;
 
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class EdgeClassifierDFS {
@@ -23,7 +26,6 @@ public class EdgeClassifierDFS {
         f=new int[n];
         predecessor=new int[n];
     }
-
     public void DF_traversal() {
         int v;
         for (int i = 0; i < n; i++) {
